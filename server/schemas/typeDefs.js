@@ -34,7 +34,9 @@ type Thought {
     friendCount: Int
     thoughts: [Thought]
     friends: [User]
-  }
+  }    
+
+  
 
 
 type Query {
@@ -49,3 +51,20 @@ type Query {
 
 // export the typeDefs
 module.exports = typeDefs;
+
+
+// code for the getSingleUser query Variables is saved below for later review & possible use
+
+// query getSingleUser($username: String!) {
+//     user(username: $username) {
+//       username
+//       friendCount
+//       thoughts {
+//         thoughtText
+//         createdAt
+//       }
+//       friends {
+//         username
+//       }
+//     }
+//   }
